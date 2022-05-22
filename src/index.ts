@@ -15,12 +15,16 @@ async function scan(hosts: Host[]): Promise<HostStats[]> {
         const adapter = hostAdapterFactory(host);
         let pingResult: HostAdapter.PingResult | undefined = undefined;
         if(adapter.ping !== undefined) {
-            pingResult = await adapter.ping();
+            try {
+                pingResult = await adapter.ping();
+            } catch (error) {
+                // console.error(error);
+                // ignore
+            }
         }
         result.push({
             ...host,
             pingResult,
-            reachable: pingResult !== undefined && pingResult.percentLoss < 100 ? true : false,
         });
     }
     return result;
@@ -31,7 +35,8 @@ async function main() {
     const scanResult: HostStats[] = await scan(hosts);
     console.table(scanResult.map(sr => ({
         ...sr,
-        pingResult: sr.pingResult === undefined ? '/' : sr.pingResult.avg,
+        pingResult: sr.pingResult !== undefined ? sr.pingResult.avg : Infinity,
+        reachable: sr.pingResult !== undefined && sr.pingResult.percentLoss < 100 ? true : false,
     })));
 }
 

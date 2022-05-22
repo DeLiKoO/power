@@ -23,5 +23,11 @@
         "ipAddress": "192.168.1.9",
         "macAddress": "00:11:32:4e:c7:fb",
         "wakeOnLanAvailable": true
+    },
+    {
+        "identifier": "X",
+        "ipAddress": "192.168.1.55",
+        "macAddress": "00:ff:00:ff:00:ff",
+        "wakeOnLanAvailable": true
     }
 ]
