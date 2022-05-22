@@ -1,0 +1,27 @@
+[
+    {
+        "hostname": "devbox",
+        "ipAddress": "192.168.1.11",
+        "macAddress": "00:a0:98:4d:88:c8",
+        "wakeOnLanAvailable": false,
+        "vmHostedBy": "truenas"
+    },
+    {
+        "hostname": "truenas",
+        "ipAddress": "192.168.1.26",
+        "macAddress": "70:f3:95:1d:54:48",
+        "wakeOnLanAvailable": true
+    },
+    {
+        "hostname": "H9",
+        "ipAddress": "192.168.1.58",
+        "macAddress": "00:d8:61:52:5e:fc",
+        "wakeOnLanAvailable": true
+    },
+    {
+        "hostname": "NV_DISKSTATION",
+        "ipAddress": "192.168.1.9",
+        "macAddress": "00:11:32:4e:c7:fb",
+        "wakeOnLanAvailable": true
+    }
+]
