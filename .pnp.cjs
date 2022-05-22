@@ -35,7 +35,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@tsconfig/node16", "npm:1.0.2"],\
             ["@types/node", "npm:17.0.35"],\
+            ["@types/wol", "npm:1.0.1"],\
             ["typescript", "patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=7ad353"],\
+            ["wol", "npm:1.0.7"],\
             ["yarn", "npm:1.22.18"]\
           ],\
           "linkType": "SOFT"\
@@ -59,6 +61,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/wol", [\
+        ["npm:1.0.1", {\
+          "packageLocation": "./.yarn/cache/@types-wol-npm-1.0.1-d1fbdcf1c8-133c0fa911.zip/node_modules/@types/wol/",\
+          "packageDependencies": [\
+            ["@types/wol", "npm:1.0.1"],\
+            ["@types/node", "npm:17.0.35"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["power", [\
         ["workspace:.", {\
           "packageLocation": "./",\
@@ -66,7 +78,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["power", "workspace:."],\
             ["@tsconfig/node16", "npm:1.0.2"],\
             ["@types/node", "npm:17.0.35"],\
+            ["@types/wol", "npm:1.0.1"],\
             ["typescript", "patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=7ad353"],\
+            ["wol", "npm:1.0.7"],\
             ["yarn", "npm:1.22.18"]\
           ],\
           "linkType": "SOFT"\
@@ -77,6 +91,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typescript-patch-e50fdcf519-1cb434fbc6.zip/node_modules/typescript/",\
           "packageDependencies": [\
             ["typescript", "patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=7ad353"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["wol", [\
+        ["npm:1.0.7", {\
+          "packageLocation": "./.yarn/cache/wol-npm-1.0.7-30de3fd8c0-547a97aaea.zip/node_modules/wol/",\
+          "packageDependencies": [\
+            ["wol", "npm:1.0.7"]\
           ],\
           "linkType": "HARD"\
         }]\
