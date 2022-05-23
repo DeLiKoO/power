@@ -42,8 +42,6 @@ export default function hostAdapterFactory(host: Host): HostAdapter {
                     return reject(new Error(`Unparseable result from ping command: ${resultStr}`));
                 }
 
-                console.log(percentLossMatch);
-
                 const result: HostAdapter.PingResult = {
                     min: Number.parseFloat(timingsMatch[1]),
                     avg: Number.parseFloat(timingsMatch[2]),
